@@ -1,0 +1,29 @@
+# ── Core ──
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+
+# ── Visualization ──
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.15
+
+# ── Statistics & Econometrics ──
+statsmodels>=0.14
+scikit-learn>=1.3
+arch>=6.0               # GARCH, heteroskedasticity tests
+
+# ── Data I/O ──
+pyarrow>=12.0           # Parquet read/write
+h5py>=3.9               # HDF5 for large datasets
+
+# ── Notebooks ──
+jupyterlab>=4.0
+ipywidgets>=8.0
+
+# ── Config & CLI ──
+pyyaml>=6.0
+click>=8.1
+
+# ── Testing ──
+pytest>=7.4

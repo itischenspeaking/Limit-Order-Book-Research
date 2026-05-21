@@ -1,0 +1,51 @@
+# ── Data (LOBSTER files are large & licensed) ──
+data/raw/
+data/processed/
+*.csv
+*.csv.gz
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.pkl
+*.pickle
+
+# Keep sample data for reproducibility
+!data/samples/*.csv
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+*.ipynb_metadata/
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Results (regenerable) ──
+results/figures/*.png
+results/figures/*.pdf
+results/tables/*.tex
+
+# ── Misc ──
+.env
+*.log

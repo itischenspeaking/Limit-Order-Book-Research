@@ -1,0 +1,25 @@
+# ── Default Configuration ──
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  samples_dir: "data/samples"
+
+lobster:
+  # Trading hours (ET) — LOBSTER timestamps are seconds after midnight ET
+  market_open: 34200    # 09:30:00
+  market_close: 57600   # 16:00:00
+  depth_levels: 10      # Number of order book levels
+
+tickers:
+  - AAPL
+  - MSFT
+  - AMZN
+  - GOOG
+  - SPY
+
+features:
+  resample_freq: "1s"          # Order book snapshot frequency
+  ofi_window: 50               # Events for order flow imbalance
+  vpin_bucket_size: 50         # Trades per VPIN bucket
+  spread_decomposition: "HS"   # Huang-Stoll method
